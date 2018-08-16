@@ -1,6 +1,6 @@
 [[ $TERM == "dumb" ]] && PS1='$ ' && return
 
-source .antigen.zsh
+source $HOME/.antigen.zsh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
