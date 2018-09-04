@@ -59,7 +59,7 @@ This function should only modify configuration layer settings."
      rust
      shell
      shell-scripts
-     spell-checking
+     (spell-checking :variables spell-checking-enable-by-default nil)
      syntax-checking
      treemacs
      version-control
