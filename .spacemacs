@@ -469,6 +469,7 @@ before packages are loaded."
   (xterm-mouse-mode -1)
   (require 'eglot)
   (add-hook 'rust-mode-hook 'eglot-ensure)
+  (setq c-default-style "linux" c-basic-offset 4)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
