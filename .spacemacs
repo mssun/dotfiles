@@ -56,6 +56,7 @@ This function should only modify configuration layer settings."
      markdown
      org
      python
+     restructuredtext
      rust
      shell
      shell-scripts
