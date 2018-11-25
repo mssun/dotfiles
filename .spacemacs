@@ -52,7 +52,7 @@ This function should only modify configuration layer settings."
      imenu-list
      ivy
      javascript
-     latex
+     (latex :variables latex-enable-auto-fill t)
      markdown
      org
      python
@@ -215,10 +215,10 @@ It should only modify the values of Spacemacs settings."
 
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '("Source Code Pro"
+   dotspacemacs-default-font '("SF Mono"
                                :size 13
                                :weight normal
-                               :width normal)
+                               :width expanded)
 
    ;; The leader key (default "SPC")
    dotspacemacs-leader-key "SPC"
@@ -470,6 +470,10 @@ before packages are loaded."
   (xterm-mouse-mode -1)
   (setq c-default-style "linux" c-basic-offset 4)
   (setq vc-follow-symlinks t)
+  (require 'eglot)
+  (add-hook 'rust-mode-hook 'eglot-ensure)
+  (setq-default line-spacing 0.3)
+  (setq-default TeX-master "master")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
