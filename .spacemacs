@@ -468,9 +468,9 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (xterm-mouse-mode -1)
-  (setq c-default-style "linux" c-basic-offset 4)
-  (setq vc-follow-symlinks t)
+  (setq-default vc-follow-symlinks t)
   (setq-default line-spacing 0.3)
+  (setq-default c-default-style "linux" c-basic-offset 4)
   (setq-default TeX-master "master")
   )
 
