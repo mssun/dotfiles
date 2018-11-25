@@ -470,8 +470,6 @@ before packages are loaded."
   (xterm-mouse-mode -1)
   (setq c-default-style "linux" c-basic-offset 4)
   (setq vc-follow-symlinks t)
-  (require 'eglot)
-  (add-hook 'rust-mode-hook 'eglot-ensure)
   (setq-default line-spacing 0.3)
   (setq-default TeX-master "master")
   )
