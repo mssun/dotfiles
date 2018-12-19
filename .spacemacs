@@ -61,6 +61,7 @@ This function should only modify configuration layer settings."
      shell
      shell-scripts
      spell-checking
+     sphinx
      syntax-checking
      treemacs
      version-control
