@@ -1,6 +1,6 @@
-[[ $TERM == "dumb" ]] && PS1='$ ' && return
+[[ $TERM == "dumb" ]] && unsetopt zle && PS1='$ ' && return
 
-source $HOME/.antigen.zsh
+source $HOME/antigen.zsh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -25,4 +25,5 @@ antigen theme robbyrussell
 # Tell Antigen that you're done.
 antigen apply
 
-alias vi="emacsclient -t -c"
+alias em="emacsclient -t -c"
+alias vi=em
