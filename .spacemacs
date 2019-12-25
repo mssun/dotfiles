@@ -63,7 +63,7 @@ This function should only modify configuration layer settings."
      org
      python
      restructuredtext
-     (rust :packages (not racer flycheck))
+     (rust :variables rust-backend 'lsp)
      shell
      shell-scripts
      spell-checking
@@ -490,7 +490,6 @@ before packages are loaded."
   (setq-default line-spacing 0.3)
   (setq-default c-default-style "linux" c-basic-offset 4)
   (setq-default TeX-master "master")
-  ;; (add-hook 'rust-mode-hook #'lsp)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
